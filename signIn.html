@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <title>HBO Max</title>
+</head>
+<body>
+    <nav class="menu">
+        <a href="index.html" class="menu__logo">
+            <img src="assets/images/hbo-logo.svg" alt="Logo HBO Max">
+        </a>
+        <div class="menu__actions">
+            <a href="/signIn.html" class="btn">Entrar</a>
+            <a href="#plans" role="button" class="btn btn--pink">Assine agora</a>
+        </div>
+    </nav>
+
+    <main class="main">
+        <section class="login">
+            <form class="form">
+                <h2 class="form__title">Entrar</h2>
+                <p class="form__subtitle">Você tem uma conta na HBO Max?</p>
+                
+                <div class="form__input" style="flex-direction: column">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Endereço de e-mail">
+                    <span class="error">Digite um e-mail válido!</span>
+                </div>
+
+                <div class="form__input" style="flex-direction: column">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Senha" minlength="8">
+                    <span class="error">Mínimo 8 caracteres!</span>
+                </div>
+
+                <div class="form__actions">
+                    <button type="button" class="btn btn--gradient">Entrar</button>
+                    <a href="#" class="link--purple">Esqueci minha senha</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <ul class="footer__content">
+            <li class="footer__item">
+                <a href="https://www.hbomax.com/br/pt/sitemap" class="footer__link">Agora na HBO Max</a>
+            </li>
+            <li class="footer__item">
+                <a href="https://www.hbomax.com/br/pt/coming-soon" class="footer__link">Em breve</a>
+            </li>
+            <li class="footer__item">
+                <a href="https://www.hbomax.com/br/pt/feature" class="footer__link">Filmes em destaque</a>
+            </li>
+            <li class="footer__item">
+                <a href="https://www.hbomax.com/br/pt/series" class="footer__link">Séries</a>
+            </li>
+            <li class="footer__item">
+                <a href="https://help.hbomax.com/br" class="footer__link">Ajuda</a>
+            </li>
+        </ul>
+        <p class="footer__copyright">© 2022 WarnerMedia Direct Latin America, LLC. Todos os direitos reservados. HBO Max é usado sob licença.</p>
+        <ul class="footer__social">
+            <li><a href="https://www.facebook.com/HBOMaxBr/" target="_blank"><img src="assets/images/fb_0.png" alt="Facebook da HBO Max"></a></li>
+            <li><a href="https://twitter.com/HBOMaxBR" target="_blank"><img src="assets/images/twitter_0.png" alt="Twitter da HBO Max"></a></li>
+            <li><a href="https://www.instagram.com/hbomaxbr/" target="_blank"><img src="assets/images/instagram_0.png" alt="Instagram da HBO Max"></a></li>
+            <li><a href="https://www.youtube.com/c/hbomaxbr" target="_blank"><img src="assets/images/youtube_0.png" alt="Youtube da HBO Max"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
