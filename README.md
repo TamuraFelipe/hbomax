@@ -113,8 +113,6 @@ Para implementar a barra de rolagem personalizada, como no exemplo, adicione na 
   }
 ```
 
-O resultado final do projeto deve contemplar todas as [features](#features) presentes no <a href="https://micheleambrosio.github.io/hbomax/">resultado final</a>.
-
 As fontes utilizadas no projeto foram:
 
 - [Raleway](https://fonts.google.com/specimen/Raleway)
@@ -124,14 +122,6 @@ As fontes utilizadas no projeto foram:
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
 ```
-
-*Para melhor orientação, assista ao vídeo de instruções do desafio, que está disponibilizado no Módulo 3 da Trilha de CSS.*
-
-
-<h2 id="demo">🌈 Demonstração</h2>
-
-Você pode acessar ao resultado final do projeto [clicando aqui](https://micheleambrosio.github.io/hbomax/).
-
 
 <h2 id="author">💻 Autora</h2>
 <p>
