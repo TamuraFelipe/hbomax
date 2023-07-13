@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+:root {
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient(
+      45deg,
+      #9b34ef 0%,
+      #490cb0 20%,
+      transparent 50%
+    );
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(
+      90deg,
+      #5516ba,
+      rgba(255, 0, 229, 0.5) 80%
+    );
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --text-white: #fff;
+    --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
+  
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+body {
+    background: var(--primary-color);
+    color: var(--text-white);
+}
+h1 {
+    font-size: 2.8rem;
+}
+h2 {
+    font-size: 2.4rem;
+}
+h3 {
+    font-size: 2rem;
+}
+p {
+    font-size: 1.6rem;
+}
+label {
+    display: none;
+}
+input {
+    width: 100%;
+}
+button {
+    cursor: pointer;
+}
+.subtitle {
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+
+/*BTN*/
+.btn {
+    color: var(--text-white);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1.6rem 4rem;
+    width: 100%;
+    text-align: center;
+    letter-spacing: .4rem;
+    border-radius: 500px;
+}
+.btn--pink {
+    background: var(--tertiary-color);
+    padding: .8rem 2.6rem;
+    transition: background .5s, color .5s   ;
+}
+.btn--pink:hover {
+    background: var(--btn-link-bg-color);
+    color: var(--btn-link-color);
+}
+.btn--gradient {
+    background: var(--btn-bg-color-gradient);
+    outline: 3px solid transparent;
+    transition: background 1s, outline 1s, transform 1s;
+    background-size: 290%;
+}
+.btn--gradient:hover {
+    background-color: transparent;
+    background-position: 100%;
+    outline: 2px solid var(--secondary-color);
+    transform: scale(1.05);
+}
+.btn--animation {
+    animation: wiggle 2.2s linear infinite;
+}
+/*Menu*/
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+    padding: 3.2rem 2.4rem;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.menu__logo {
+    width: 14rem;
+}
+
+/*Footer*/
+.footer {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 2.4rem;
+}
+.footer__content {
+    width: 100%;
+    text-align: center;
+}
+.footer__item {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+}
+.footer__link {
+    color: var(--link-color);
+    letter-spacing: 2px;
+    transition: color .5s;
+}
+.footer__link:hover {
+    color: var(--text-white);
+}
+.footer__copyright {
+    font-size: 1.2rem;
+    margin: 16px 0;
+    color: var(--link-color);
+    text-align: center;
+}
+.footer__social {
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+
+/* Custom Scroll */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--tertiary-color);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+@keyframes wiggle {
+    0%, 10% {
+        transform: rotate(0);
+    }
+    15% {
+        transform: rotate(-15deg);
+    }
+    20% {
+        transform: rotate(10deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    30% {
+        transform: rotate(10deg);
+    }
+    35% {
+        transform: rotate(-10deg);
+    }
+    40%, 100% {
+        transform: rotate(0);
+    }
+}
+
+/*Queries*/
+@media (min-width: 767px) {
+    h1 {
+        font-size: 3.2rem;
+    }
+    h2 {
+        font-size: 2.8rem;
+    }
+    p {
+        font-size: 2rem;
+    }
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.6rem 2.4rem;
+    }
+    .header {
+        margin-top: 6rem !important;
+    }
+    .plans .plans__cards {
+        flex-wrap: nowrap;
+    }
+    .plans .plans__cards .card {
+        padding: 4rem 6rem;
+    }
+    .footer__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+    }
+}
